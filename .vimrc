@@ -1,5 +1,6 @@
 set nocompatible              " be iMproved
 filetype off                  " required!
+:set relativenumber
 
 " set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
@@ -36,6 +37,7 @@ Plugin 'klen/python-mode'
 Plugin 'davidhalter/jedi-vim'
 Plugin 'scrooloose/nerdcommenter'
 let g:latex_to_unicode_tab = 0
+Plugin 'LanguageTool'
 
 " neocomplete
 Plugin 'Shougo/neocomplete'
@@ -152,6 +154,7 @@ cmap w!! w !sudo tee > /dev/null %
 "setglobal nospell
 "setlocal spell spelllang=en_us
 setglobal spell spelllang=en_us
+let g:languagetool_jar='/usr/local/Cellar/languagetool/3.5/libexec/languagetool-commandline.jar' 
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""

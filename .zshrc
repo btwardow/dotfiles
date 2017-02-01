@@ -88,3 +88,5 @@ bindkey '^R' history-incremental-search-backward
 
 #export PYTHONPATH="$HOME/sars/"
 #source ~/.oh-my-zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
+export JAVA_HOME=$(/usr/libexec/java_home)
