@@ -13,6 +13,7 @@ Plugin 'gmarik/Vundle.vim'
 " My bundles here:
 "
 " original repos on GitHub
+Plugin 'rking/ag.vim'
 Plugin 'Lokaltog/vim-easymotion'
 Plugin 'L9'
 "Plugin 'Tagbar'
@@ -28,7 +29,6 @@ Plugin 'fugitive.vim'
 Plugin 'rainbow_parentheses.vim'
 Plugin 'derekwyatt/vim-scala'
 Plugin 'airblade/vim-gitgutter'
-"Plugin 'jcfaria/Vim-R-plugin'
 Plugin 'JuliaLang/julia-vim'
 Plugin 'godlygeek/tabular'
 Plugin 'plasticboy/vim-markdown'
@@ -43,15 +43,6 @@ Plugin 'LanguageTool'
 Plugin 'Shougo/neocomplete'
 Plugin 'Shougo/neosnippet'
 Plugin 'Shougo/neosnippet-snippets'
-Plugin 'sjl/badwolf'
-
-"vimside
-Bundle "megaannum/self"
-Bundle "megaannum/forms" 
-Bundle "Shougo/vimproc"
-Bundle "Shougo/vimshell"
-Bundle "aemoncannon/ensime"
-Bundle "megaannum/vimside" 
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
