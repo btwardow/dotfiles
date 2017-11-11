@@ -14,7 +14,9 @@ ZSH_THEME="dpoggi"
 alias t="tmuxifier "
 alias intellij="open -a 'IntelliJ IDEA CE' "
 alias ctags_scala="ctags -R . --exclude=target --exclude=vendor"
-alias vim='vim --servername VIM'
+#alias vim='vim --servername VIM'
+alias vim='vim --startuptime ~/.vim/vim_startuptime.log'
+alias vim-vanilla='vim -u NONE -N'
 alias mydotfiles='git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 
 # Set to this to use case-sensitive completion
@@ -56,7 +58,7 @@ plugins=(git osx brew brew-cask sbt scala gradle jira jsontools mvn node npm tmu
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
-export PATH="$HOME/bin:/$HOME/.tmuxifier/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin:/Library/TeX/Root/bin/x86_64-darwin"
+export PATH="$HOME/miniconda3/bin:$HOME/bin:/$HOME/.tmuxifier/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin:/Library/TeX/Root/bin/x86_64-darwin"
 # export MANPATH="/usr/local/man:$MANPATH"
 
 # Preferred editor for local and remote sessions
@@ -89,3 +91,4 @@ bindkey '^R' history-incremental-search-backward
 #source ~/.oh-my-zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 export JAVA_HOME=$(/usr/libexec/java_home)
+fpath=(/usr/local/share/zsh-completions /usr/local/share/zsh/site-functions /usr/local/share/zsh/site-functions /Users/b.twardowski/.oh-my-zsh/plugins/sublime /Users/b.twardowski/.oh-my-zsh/plugins/docker /Users/b.twardowski/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting /Users/b.twardowski/.oh-my-zsh/plugins/tmux /Users/b.twardowski/.oh-my-zsh/plugins/npm /Users/b.twardowski/.oh-my-zsh/plugins/node /Users/b.twardowski/.oh-my-zsh/plugins/mvn /Users/b.twardowski/.oh-my-zsh/plugins/jsontools /Users/b.twardowski/.oh-my-zsh/plugins/jira /Users/b.twardowski/.oh-my-zsh/plugins/gradle /Users/b.twardowski/.oh-my-zsh/plugins/scala /Users/b.twardowski/.oh-my-zsh/plugins/sbt /Users/b.twardowski/.oh-my-zsh/plugins/brew /Users/b.twardowski/.oh-my-zsh/plugins/osx /Users/b.twardowski/.oh-my-zsh/plugins/git /Users/b.twardowski/.oh-my-zsh/functions /Users/b.twardowski/.oh-my-zsh/completions /usr/local/share/zsh/site-functions /usr/local/Cellar/zsh/5.3.1/share/zsh/functions)
