@@ -17,6 +17,7 @@ alias ctags_scala="ctags -R . --exclude=target --exclude=vendor"
 #alias vim='vim --servername VIM'
 alias vim='vim --startuptime ~/.vim/vim_startuptime.log'
 alias vim-vanilla='vim -u NONE -N'
+alias vim-conda='PYTHONPATH="$CONDA_PREFIX/lib/python*/site-packages" vim'
 alias mydotfiles='git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 
 # Set to this to use case-sensitive completion
@@ -58,7 +59,7 @@ plugins=(git osx brew brew-cask sbt scala gradle jira jsontools mvn node npm tmu
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
-export PATH="$HOME/miniconda3/bin:$HOME/bin:/$HOME/.tmuxifier/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin:/Library/TeX/Root/bin/x86_64-darwin"
+export PATH="/usr/local/miniconda3/bin:$HOME/bin:/$HOME/.tmuxifier/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin:/Library/TeX/Root/bin/x86_64-darwin"
 # export MANPATH="/usr/local/man:$MANPATH"
 
 # Preferred editor for local and remote sessions
