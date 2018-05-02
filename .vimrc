@@ -33,7 +33,6 @@ Plugin 'JuliaLang/julia-vim'
 Plugin 'godlygeek/tabular'
 Plugin 'plasticboy/vim-markdown'
 Plugin 'Tagbar'
-Plugin 'klen/python-mode'
 Plugin 'davidhalter/jedi-vim'
 Plugin 'scrooloose/nerdcommenter'
 let g:latex_to_unicode_tab = 0
@@ -215,7 +214,7 @@ au FileType latex   set ai et     spell tw=80
 au FileType matlab  set ai et   nospell tw=780
 au FileType java    set ai et   nospell tw=780 cindent
 au FileType scala   set ai et   nospell tw=780 cindent
-au FileType python  set ai et   nospell tw=780
+au FileType python  set ai et   nospell tw=80
 au FileType perl    set    et   nospell tw=780 cindent
 au FileType awk     set ai et   nospell tw=780
 au FileType php     set ai et   nospell tw=780 cindent
@@ -240,10 +239,11 @@ let g:vim_markdown_math=1
 let g:vim_markdown_frontmatter=1
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" => PyMode
+" => python-mode
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 let g:pymode_rope = 0
 let g:pymode_lint_write = 0
+let g:pymode_python = 'python3'
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Persistent Undo
