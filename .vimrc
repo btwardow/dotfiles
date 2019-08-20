@@ -16,7 +16,6 @@ Plugin 'gmarik/Vundle.vim'
 Plugin 'rking/ag.vim'
 Plugin 'Lokaltog/vim-easymotion'
 Plugin 'L9'
-"Plugin 'Tagbar'
 Plugin 'The-NERD-tree'
 Plugin 'ctrlp.vim'
 Plugin 'matchit.zip'
@@ -27,13 +26,10 @@ Plugin 'bling/vim-airline'
 Plugin 'https://github.com/sjl/tslime.vim'
 Plugin 'fugitive.vim'
 Plugin 'rainbow_parentheses.vim'
-Plugin 'derekwyatt/vim-scala'
 Plugin 'airblade/vim-gitgutter'
-Plugin 'JuliaLang/julia-vim'
-Plugin 'godlygeek/tabular'
 Plugin 'plasticboy/vim-markdown'
 Plugin 'Tagbar'
-Plugin 'davidhalter/jedi-vim'
+" Plugin 'davidhalter/jedi-vim'
 Plugin 'scrooloose/nerdcommenter'
 let g:latex_to_unicode_tab = 0
 Plugin 'LanguageTool'
@@ -127,10 +123,14 @@ set tm=500
 
 syntax enable
 "colorscheme solarized
-colorscheme darkblue
+"colorscheme darkblue
+colorscheme default
 set background=dark
 
 com! FormatJSON %!python -m json.tool
+
+"set list
+"set listchars=tab:▸\ ,eol:¬
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Text, tab and indent related
@@ -156,7 +156,8 @@ set mouse=a
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Keyboard shotcuts
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-let mapleader = "\ "
+" let mapleader = "\ "
+let mapleader = ","
 nnoremap <Leader>s :set spell!
 
 map <F7> :NERDTreeToggle<CR>
@@ -185,6 +186,7 @@ au VimEnter * RainbowParenthesesToggle
 au Syntax * RainbowParenthesesLoadRound
 au Syntax * RainbowParenthesesLoadSquare
 au Syntax * RainbowParenthesesLoadBraces
+au FocusGained,BufEnter * :checktime
 
 set laststatus=2
 
@@ -239,7 +241,7 @@ let g:vim_markdown_math=1
 let g:vim_markdown_frontmatter=1
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" => python-mode
+" => 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 let g:pymode_rope = 0
 let g:pymode_lint_write = 0
